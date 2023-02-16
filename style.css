@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.not-clickable {
+    pointer-events: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -41,6 +45,19 @@
     font-size: 20px;
 }
 
+.idle-answer {
+    background-color: bisque;
+}
+
+.right-answer {
+    background-color: yellowgreen;
+    
+}
+.wrong-answer {
+    background-color: crimson;
+    
+}
+
 .grid div p {
     pointer-events: none;
 }
@@ -56,16 +73,23 @@
     margin: 20px auto;
 }
 
-.dot {
-    background-color: bisque;
+.dots div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid;
-
 }
 
-.test {
-    background-color: yellowgreen;
-    color: #242424;
+
+
+.dot-right {
+    background-color: greenyellow;
+}
+.dot-wrong {
+    background-color: red;
+}
+
+.thanks {
+    font-size: 3em;
+    font-weight: 900;
 }
